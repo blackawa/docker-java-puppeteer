@@ -8,6 +8,7 @@ const puppeteer = require('puppeteer');
     });
     const page = await browser.newPage();
     await page.setContent(htmlString);
+    await page.evaluateHandle('document.fonts.ready');
     await page.pdf({
         path: pdfPath,
         format: 'A4',

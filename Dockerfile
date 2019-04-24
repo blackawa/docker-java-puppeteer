@@ -45,6 +45,7 @@ RUN apt-get update -qq && apt-get install -qq --no-install-recommends \
     lsb-release \
     xdg-utils \
     wget \
+    locales \
     && rm -rf /var/lib/apt/lists/*
 ADD app.js /usr/src/app.js
 ADD package.json /usr/src/package.json
