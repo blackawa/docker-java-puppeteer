@@ -1,0 +1,11 @@
+{
+  "name": "pdf-generator",
+  "description:": "pdf generator script",
+  "repository": "https://github.com/blackawa/docker-java-puppeteer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^1.14.0"
+  }
+}
