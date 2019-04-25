@@ -46,6 +46,7 @@ RUN apt-get update -qq && apt-get install -qq --no-install-recommends \
     xdg-utils \
     wget \
     locales \
+    fonts-ipafont \
     && rm -rf /var/lib/apt/lists/*
 ADD app.js /usr/src/app.js
 ADD package.json /usr/src/package.json
