@@ -7,7 +7,7 @@ const puppeteer = require('puppeteer');
         args: ['--no-sandbox', '--disable-setuid-sandbox'],
     });
     const page = await browser.newPage();
-    await page.goto('file://' + htmlFilePath, {waitUntil: 'networkidle0'});
+    await page.goto('file://' + htmlFilePath, {waitUntil: ['domcontentloaded', 'networkidle0']});
     await page.evaluateHandle('document.fonts.ready');
     await page.pdf({
         path: pdfPath,
